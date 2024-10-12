@@ -158,55 +158,25 @@ transition: background-color 0.3s ease, transform 0.3s ease;
   color: aliceblue;
 }
 
-.testimonial-container {
-  position: relative;
-  text-align: center;
+#tests{
+  display: grid;                        
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+  gap: 20px;                             
+  padding: 20px; 
+  margin-left: 30px;
+  margin-right: 30px;
 }
-
-input[type="radio"] {
-  display: none; 
-}
-
-.testimonials {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 200px; 
-}
-
-.testimonial {
-  display: none; 
-  padding: 20px;
-  background-color: rgb(0, 0, 0);
+.test{
+  background-color: rgb(30, 30, 30); 
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
-  max-width: 400px; 
-  margin: 0 auto;
-}
-
-input#story1:checked ~ .testimonials #test1,
-input#story2:checked ~ .testimonials #test2,
-input#story3:checked ~ .testimonials #test3 {
-  display: block; 
-}
-
-.buttons {
-  margin-top: 20px;
-}
-
-.button {
-  display: inline-block;
-  padding: 10px 15px;
-  margin: 0 10px;
-  background-color: rgb(74, 199, 103);
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.button:hover {
-  background-color: rgb(50, 150, 75);
+  box-shadow: 0 4px 16px rgba(255, 255, 255, 0.2); 
+  flex: 1 1 300px; 
+  max-width: 374px;  
+  margin: 10px;                      
+  text-align: center;
+  overflow: hidden;
+  padding: 20px 20px;
+  background-color: rgb(26, 5, 5);
 }
 .footer {
   background-color: rgb(30, 30, 30);
